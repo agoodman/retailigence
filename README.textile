@@ -8,17 +8,15 @@ h2. Install
 
 h2. Configure
 
-@Retailigence.configure do |config|
-  config.apikey = "your-api-key"
-end@
+@Retailigence.configure { |config| config.apikey = "your-api-key" }@
 
 h2. Use
 
-@results = Retailigence::Product.search(barcode: '001122334455', requestorid: '00deadbeef00')@
+@results = Retailigence::Product.search(barcode: '001122334455', requestorid: '00deadbeef00', latitude: 27.92, longitude: -82.48)@
 
 Results:
 
-@product = results["RetailigenceSearchResult"]["Results"]["Result"][0]
-name = product["Name"]
-msrp = product["MSRP"]@
+@product = results["RetailigenceSearchResult"]["Results"]["Result"][0]@
+@name = product["Name"]@
+@msrp = product["MSRP"]@
 
