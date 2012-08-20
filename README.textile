@@ -1,6 +1,6 @@
 h1. Retailigence
 
-A Ruby gem wrapper for interacting with the Retailigence API.
+A Ruby gem wrapper for interacting with the Retailigence API. Learn more at "http://retailigence.com/developers":http://retailigence.com/developers
 
 h2. Install
 
