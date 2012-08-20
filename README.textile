@@ -4,21 +4,21 @@ A Ruby gem wrapper for interacting with the Retailigence API. Learn more at "htt
 
 h2. Install
 
-@gem install retailigence@
+bc. gem install retailigence
 
 h2. Configure
 
-@Retailigence.configure do |config|
+bc. Retailigence.configure do |config| 
   config.apikey = "your-api-key"
-end@
+end
 
 h2. Use
 
-@results = Retailigence::Product.search(barcode: '001122334455', requestorid: '00deadbeef00')@
+bc. results = Retailigence::Product.search(barcode: '001122334455', requestorid: '00deadbeef00', latitude: 27.92, longitude: -82.48)
 
 Results:
 
-@product = results["RetailigenceSearchResult"]["Results"]["Result"][0]
+bc. product = results["RetailigenceSearchResult"]["Results"]["Result"][0]
 name = product["Name"]
-msrp = product["MSRP"]@
+msrp = product["MSRP"]
 
