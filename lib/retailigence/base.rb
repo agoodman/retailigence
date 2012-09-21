@@ -2,7 +2,7 @@ module Retailigence
 
   class Base < ActiveResource::Base
     
-    self.site = "http://apitest.retailigence.com/v1.2/"
+    self.site = "http://api.retailigence.com/v1.2/"
     self.format = ActiveResource::Formats::XmlFormat
     
     def self.apikey=(key)
